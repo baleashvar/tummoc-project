@@ -1,38 +1,25 @@
+from typing import Dict
 from fastapi import FastAPI
 
 app = FastAPI()
 
-class Election:
-    def __init__(self):
-        self.candidates = {}
-    
-    def vote(self, name):
-        if name in self.candidates:
-            self.candidates[name] += 1
-            return True
-        else:
-            return False
-    
-    def get_winner(self):
-        max_votes = max(self.candidates.values())
-        winners = [candidate for candidate, votes in self.candidates.items() if votes == max_votes]
-        return winners
+candidates = ["John", "Jane", "Jack"]
+votes = {candidate: 0 for candidate in candidates}
 
-
-election = Election()
-
-@app.post("/vote/{candidate}")
-def vote(candidate: str):
-    if election.vote(candidate):
-        return {"message": "Vote successful"}
+@app.get("/vote/{name}")
+async def vote(name: str) -> Dict[str, int]:
+    if name in candidates:
+        votes[name] += 1
+        return {"success": True}
     else:
-        return {"message": "Invalid ballot"}
+        return {"success": False}
 
 @app.get("/winner")
-def get_winner():
-    winners = election.get_winner()
-    return {"winners": winners}
+async def print_winner() -> str:
+    max_votes = max(votes.values())
+    winners = [candidate for candidate, vote in votes.items() if vote == max_votes]
+    if len(winners) == 1:
+        return winners[0]
+    else:
+        return "\n".join(winners)
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
