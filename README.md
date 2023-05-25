@@ -25,4 +25,6 @@ of the digits that weren’t multiplied by 2 (starting from the end):
 so the card is valid!
 
 Output:
+
+
 ![ss1](https://github.com/baleashvar/tummoc-project/assets/69070339/ef2f943e-487f-4ac3-992a-aad82de4848a)
