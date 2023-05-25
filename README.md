@@ -1,4 +1,7 @@
 Python Logical Question 
+
+please click on "Python logical folder" and logical.py file to see the code 
+
 1. Write a program that prompts the user to enter a credit card number as a long integer
 and Display whether that card is valid or invalid.Credit card numbers follow certain
 patterns.
