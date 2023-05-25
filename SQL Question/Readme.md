@@ -63,7 +63,6 @@ Expected Result
 station_id | station_name | slot | time
 1 | Sta 1 | 1 | 6:30
 1 | Sta 1 | 1 | 6:40
-View other drafts
 
 
 
