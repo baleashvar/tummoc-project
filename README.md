@@ -2,8 +2,7 @@ Python Logical Question
 
 please click on "Python logical folder" and "logical.py" file to see the code.
 
-
-file:///home/bala/Pictures/Screenshots/Screenshot%20from%202023-05-25%2014-14-39.png
+![Screenshot from 2023-05-25 14-14-39](https://github.com/baleashvar/tummoc-project/assets/69070339/81c4b6bd-eb59-4165-b58a-72b694489d4b)
 
 
 Output:
