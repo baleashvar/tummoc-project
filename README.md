@@ -25,11 +25,4 @@ of the digits that weren’t multiplied by 2 (starting from the end):
 so the card is valid!
 
 Output:
-KeyboardInterrupt
-(base) bala@bala-HP-EliteBook-840-G1:~/Documents/tummoc project/python logical$ python3 logical.py
-Enter a credit card number: 4003600000000014
-The number is valid.
-(base) bala@bala-HP-EliteBook-840-G1:~/Documents/tummoc project/python logical$ python3 logical.py
-Enter a credit card number: 2345000057
-The number is invalid.
-(base) bala@bala-HP-EliteBook-840-G1:~/Documents/tummoc project/python logical$ 
+![ss1](https://github.com/baleashvar/tummoc-project/assets/69070339/ef2f943e-487f-4ac3-992a-aad82de4848a)
